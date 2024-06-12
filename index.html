@@ -1,79 +1,102 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
-        <title>Bem vindo</title>
-
-        <!--Google Fonts-->
-        <link 
-            href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
-            rel="stylesheet">
-
-        <!--Font Awesome-->
-        <link 
-            rel="stylesheet" 
-            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
-            crossorigin="anonymous">
-
-        <!--Meu Estilo-->
-        <link rel="stylesheet" href="./css/style.css">
-
-        <!--Meu Estilo Slide-->
-        <link rel="stylesheet" href="./css/slideResponsivo.css">
-    </head>
-    <body>
-        <header>
-            <div class="container">
-                <div class="logo"><img src="./img/logo.png" alt="logo" title="logo"></div>
-                <nav>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="sobre.html">Sobre</a></li>
-                        <li><a href="contato.html">Contato</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </header>
-
-        <main>
-            <section class="slide">
-                <ul class="rslides">
-                    <li>
-                        <img src="./img/slide1.jpg" alt="Slide 1">
-                    </li>
-                    <li>
-                        <img src="./img/slide2.jpg" alt="Slide 2">
-                    </li>
-                    <li>
-                        <img src="./img/slide3.jpg" alt="Slide 3">
-                    </li>
-                </ul>
-            </section>
-
-            <article>
-                <h1>Mais vistos</h1>
-                <section class="lista">
-                    <div class="item">Destaque 1</div>
-                    <div class="item">Destaque 2</div>
-                    <div class="item">Destaque 3</div>
-                </section>
-            </article>
-        </main>
-
-        <footer>
-            <small>Todos os direitos reservados 2020</div>
-        </footer>
-    </body>
-
-    <script 
-        src="https://code.jquery.com/jquery-3.4.1.min.js" 
-        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
-        crossorigin="anonymous">
-    </script>
-    <script src="./js/responsiveslides.min.js"></script>
-    <script src="./js/slide.js"></script>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professor de Física - [Seu Nome]</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #0055a5;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Professor de Física - [Seu Nome]</h1>
+    </header>
+    <nav>
+        <a href="#sobre-mim">Sobre mim</a>
+        <a href="#publicacoes">Publicações</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#ensino">Ensino</a>
+        <a href="#membros">Membros</a>
+    </nav>
+    <section id="sobre-mim">
+        <h2>Sobre mim</h2>
+        <p>Sou professor universitário na área de física, com experiência em pesquisa e ensino. Minha paixão é compartilhar conhecimento e inspirar a próxima geração de cientistas.</p>
+    </section>
+    <section id="publicacoes">
+        <h2>Publicações</h2>
+        <ul>
+            <li><a href="[Link para publicação 1]">Publicação 1</a></li>
+            <li><a href="[Link para publicação 2]">Publicação 2</a></li>
+            <li><a href="[Link para publicação 3]">Publicação 3</a></li>
+        </ul>
+    </section>
+    <section id="projetos">
+        <h2>Projetos</h2>
+        <ul>
+            <li><a href="[Link para repositório GitHub 1]">Projeto 1</a></li>
+            <li><a href="[Link para repositório GitHub 2]">Projeto 2</a></li>
+            <li><a href="[Link para repositório GitHub 3]">Projeto 3</a></li>
+        </ul>
+    </section>
+    <section id="ensino">
+        <h2>Ensino</h2>
+        <ul>
+            <li><a href="[Link para apresentação 1]">Apresentação 1</a></li>
+            <li><a href="[Link para vídeo de aula 1]">Vídeo de Aula 1</a></li>
+            <li><a href="[Link para material de ensino 1]">Material de Ensino 1</a></li>
+        </ul>
+    </section>
+    <section id="membros">
+        <h2>Membros</h2>
+        <p>Lista de alunos e colaboradores do meu grupo de pesquisa.</p>
+        <ul>
+            <li>Aluno 1 - <a href="mailto:aluno1@example.com">aluno1@example.com</a></li>
+            <li>Aluno 2 - <a href="mailto:aluno2@example.com">aluno2@example.com</a></li>
+            <li>Aluno 3 - <a href="mailto:aluno3@example.com">aluno3@example.com</a></li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
+    </footer>
+</body>
 </html>
