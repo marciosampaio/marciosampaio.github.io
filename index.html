@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Professor de Física - [Seu Nome]</title>
+    <title>Márcio Sampaio Gomes Filho - Professor de Física</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -13,90 +13,98 @@
             color: #333;
         }
         header {
-            background-color: #003366;
+            background-color: #4CAF50;
             color: white;
-            padding: 20px;
+            padding: 1rem;
             text-align: center;
         }
         nav {
-            background-color: #0055a5;
-            padding: 10px;
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            background-color: #333;
         }
         nav a {
             color: white;
-            margin: 0 15px;
+            padding: 14px 20px;
             text-decoration: none;
-            font-weight: bold;
+            text-align: center;
         }
-        section {
-            padding: 20px;
-            margin: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            padding: 2rem;
+        }
+        .section {
+            margin-bottom: 2rem;
         }
         footer {
-            background-color: #003366;
+            background-color: #333;
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 1rem;
             position: fixed;
             width: 100%;
             bottom: 0;
         }
+        .gallery img {
+            width: 100%;
+            max-width: 300px;
+            height: auto;
+            margin: 10px;
+        }
     </style>
 </head>
 <body>
-    <header>
-        <h1>Professor de Física - [Seu Nome]</h1>
-    </header>
-    <nav>
-        <a href="#sobre-mim">Sobre mim</a>
-        <a href="#publicacoes">Publicações</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#ensino">Ensino</a>
-        <a href="#membros">Membros</a>
-    </nav>
-    <section id="sobre-mim">
-        <h2>Sobre mim</h2>
-        <p>Sou professor universitário na área de física, com experiência em pesquisa e ensino. Minha paixão é compartilhar conhecimento e inspirar a próxima geração de cientistas.</p>
-    </section>
-    <section id="publicacoes">
-        <h2>Publicações</h2>
+
+<header>
+    <h1>Márcio Sampaio Gomes Filho</h1>
+    <p>Professor Universitário na Área de Física</p>
+</header>
+
+<nav>
+    <a href="#about">Sobre Mim</a>
+    <a href="#portfolio">Portfólio</a>
+    <a href="#students">Alunos</a>
+    <a href="#contact">Contato</a>
+</nav>
+
+<div class="container">
+    <div id="about" class="section">
+        <h2>Sobre Mim</h2>
+        <p>Olá, meu nome é Márcio Sampaio Gomes Filho. Sou professor universitário na área de física. Dedico minha carreira ao ensino e à pesquisa, buscando sempre inspirar e motivar meus alunos a se interessarem pela ciência.</p>
+    </div>
+
+    <div id="portfolio" class="section">
+        <h2>Portfólio</h2>
+        <p>Aqui estão alguns dos meus projetos e publicações recentes:</p>
+        <div class="gallery">
+            <img src="projeto1.jpg" alt="Projeto 1">
+            <img src="projeto2.jpg" alt="Projeto 2">
+            <img src="projeto3.jpg" alt="Projeto 3">
+        </div>
+    </div>
+
+    <div id="students" class="section">
+        <h2>Alunos</h2>
+        <p>Seção dedicada aos meus alunos, com materiais de apoio e informações importantes.</p>
         <ul>
-            <li><a href="[Link para publicação 1]">Publicação 1</a></li>
-            <li><a href="[Link para publicação 2]">Publicação 2</a></li>
-            <li><a href="[Link para publicação 3]">Publicação 3</a></li>
+            <li><a href="#">Material de Aula 1</a></li>
+            <li><a href="#">Material de Aula 2</a></li>
+            <li><a href="#">Material de Aula 3</a></li>
         </ul>
-    </section>
-    <section id="projetos">
-        <h2>Projetos</h2>
-        <ul>
-            <li><a href="[Link para repositório GitHub 1]">Projeto 1</a></li>
-            <li><a href="[Link para repositório GitHub 2]">Projeto 2</a></li>
-            <li><a href="[Link para repositório GitHub 3]">Projeto 3</a></li>
-        </ul>
-    </section>
-    <section id="ensino">
-        <h2>Ensino</h2>
-        <ul>
-            <li><a href="[Link para apresentação 1]">Apresentação 1</a></li>
-            <li><a href="[Link para vídeo de aula 1]">Vídeo de Aula 1</a></li>
-            <li><a href="[Link para material de ensino 1]">Material de Ensino 1</a></li>
-        </ul>
-    </section>
-    <section id="membros">
-        <h2>Membros</h2>
-        <p>Lista de alunos e colaboradores do meu grupo de pesquisa.</p>
-        <ul>
-            <li>Aluno 1 - <a href="mailto:aluno1@example.com">aluno1@example.com</a></li>
-            <li>Aluno 2 - <a href="mailto:aluno2@example.com">aluno2@example.com</a></li>
-            <li>Aluno 3 - <a href="mailto:aluno3@example.com">aluno3@example.com</a></li>
-        </ul>
-    </section>
-    <footer>
-        <p>&copy; 2024 [Seu Nome]. Todos os direitos reservados.</p>
-    </footer>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contato</h2>
+        <p>Entre em contato comigo através do e-mail: <a href="mailto:marcio@exemplo.com">marcio@exemplo.com</a></p>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Márcio Sampaio Gomes Filho. Todos os direitos reservados.</p>
+</footer>
+
 </body>
 </html>
