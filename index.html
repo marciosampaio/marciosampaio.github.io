@@ -1,128 +1,112 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Márcio Sampaio Gomes Filho - Professor de Física</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333;
-        }
-        header {
-            background-color: #282c34;
-            color: white;
-            padding: 2rem 1rem;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #333;
-        }
-        nav a {
-            color: white;
-            padding: 1rem;
-            text-decoration: none;
-            transition: background-color 0.3s;
-        }
-        nav a:hover {
-            background-color: #575757;
-        }
-        .container {
-            padding: 2rem 1rem;
-            max-width: 1200px;
-            margin: auto;
-        }
-        .section {
-            margin-bottom: 3rem;
-        }
-        .section h2 {
-            border-bottom: 2px solid #4CAF50;
-            padding-bottom: 0.5rem;
-        }
-        .gallery {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 1rem;
-        }
-        .gallery img {
-            width: 100%;
-            max-width: 300px;
-            height: auto;
-            border: 2px solid #ddd;
-            border-radius: 4px;
-            transition: transform 0.3s;
-        }
-        .gallery img:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            background-color: #282c34;
-            color: white;
-            text-align: center;
-            padding: 1rem;
-            position: fixed;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
-</head>
-<body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-<header>
-    <h1>Márcio Sampaio Gomes Filho</h1>
-    <p>Professor Universitário na Área de Física</p>
-</header>
+        <title>Bem vindo</title>
 
-<nav>
-    <a href="#about">Sobre Mim</a>
-    <a href="#portfolio">Portfólio</a>
-    <a href="#students">Alunos</a>
-    <a href="#contact">Contato</a>
-</nav>
+        <!--Google Fonts-->
+        <link 
+            href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
+            rel="stylesheet">
 
-<div class="container">
-    <div id="about" class="section">
-        <h2>Sobre Mim</h2>
-        <p>Olá, meu nome é Márcio Sampaio Gomes Filho. Sou professor universitário na área de física. Dedico minha carreira ao ensino e à pesquisa, buscando sempre inspirar e motivar meus alunos a se interessarem pela ciência.</p>
-    </div>
+        <!--Font Awesome-->
+        <link 
+            rel="stylesheet" 
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+            crossorigin="anonymous">
 
-    <div id="portfolio" class="section">
-        <h2>Portfólio</h2>
-        <p>Aqui estão alguns dos meus projetos e publicações recentes:</p>
-        <div class="gallery">
-            <img src="projeto1.jpg" alt="Projeto 1">
-            <img src="projeto2.jpg" alt="Projeto 2">
-            <img src="projeto3.jpg" alt="Projeto 3">
-        </div>
-    </div>
+        <!--Meu Estilo-->
+        <link rel="stylesheet" href="./css/style.css">
 
-    <div id="students" class="section">
-        <h2>Alunos</h2>
-        <p>Seção dedicada aos meus alunos, com materiais de apoio e informações importantes.</p>
-        <ul>
-            <li><a href="#">Material de Aula 1</a></li>
-            <li><a href="#">Material de Aula 2</a></li>
-            <li><a href="#">Material de Aula 3</a></li>
-        </ul>
-    </div>
+        <!--Meu Estilo Slide-->
+        <link rel="stylesheet" href="./css/slideResponsivo.css">
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><img src="./img/logo.png" alt="logo" title="logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">About me</a></li>
+                        <li><a href= "interesses.html">Interests</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="resources.html">Resources "Random"</a></li>
+                        <li><a href="people.html">People</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
 
-    <div id="contact" class="section">
-        <h2>Contato</h2>
-        <p>Entre em contato comigo através do e-mail: <a href="mailto:marcio@exemplo.com">marcio@exemplo.com</a></p>
-    </div>
-</div>
+<!--        <main>
+        <article class="sobre">
+                <section class="texto">
+                    <h1 class="nome">Márcio Sampaio Gomes Filho</h1>
 
-<footer>
-    <p>&copy; 2024 Márcio Sampaio Gomes Filho. Todos os direitos reservados.</p>
-</footer>
+                    <p class="paragrafo">
+                    I am a theoretical physicist with interests in statistical mechanics, condensed matter, and computational physics. 
+                    </p>
+                    <p class="paragrafo">
+                        Currently, I am a visiting professor at the Federal University of ABC (UFABC) in Brazil.
+                    </p>
+                    <p class="paragrafo">
+                        E-mail: marcio.sampaio@ufabc.edu.br
+                    </p>
+<!--                     <p class="paragrafo">E-mail: <span class="email">marcio.sampaio@ufabc.edu.br</span></p> -->
+<!--            </section>
+               </section>
+               <section class="foto-social">
+                    <div class="foto">
+                        <img src="./img/homem.jpg" alt="Minha foto" title="colocar meu nome">
+                    </div>
+                </section>
+            </article>-->
 
-</body>
+
+    <main>               
+   <section id="inicio" class="container">
+
+                <div class="super-card">
+                    <div class="super-card-img">
+<!--                         <h2>Márcio Sampaio Gomes Filho</h2> -->
+                        <img src="./img/homem.jpg" alt="Minha foto", title="Meu nome">
+<!--                         <h2>Márcio Sampaio Gomes Filho</h2> -->
+                    </div>
+                    <div class="super-card-text">
+                    
+                    <h1 class="nome">Márcio Sampaio Gomes Filho</h1>
+
+                        <p>
+                            I am a theoretical physicist with interests in statistical mechanics, condensed matter, and computational physics. 
+                        </p>
+                        <p>
+                            Currently, I am a visiting professor at the Federal University of ABC (UFABC) in Brazil                                             
+                            <a href="https://ccnh.ufabc.edu.br/pessoas/docentes/1702-marcio-sampaio-gomes-filho" target="_blank" class="link-destacado">(more)</a>.
+
+
+                        </p>
+                        <p>
+                            Please do not hesitate to contact me if you are interested via email: <a href="marcio.sampaio@ufabc.edu.br" class="email">marcio.sampaio@ufabc.edu.br</a></p>.
+                        </p>
+                    </div>
+                </div>
+            <section id="inicio" class="container">
+        </main>
+
+        <footer>
+            <small>Todos os direitos reservados 2024</div>
+        </footer>
+    </body>
+
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.min.js" 
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/responsiveslides.min.js"></script>
+    <script src="./js/slide.js"></script>
 </html>
