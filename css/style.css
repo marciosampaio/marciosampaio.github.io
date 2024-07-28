@@ -64,7 +64,7 @@ p {
 }
 
 .container {
-    width: var(--container-width);
+    max-width: var(--container-width);
     padding: var(--container-padding);
     display: flex;
     justify-content: center;
@@ -91,14 +91,11 @@ header .container {
     flex: 0 1 90px;
 }
 
-
-
-
 nav {
     flex-grow: 0 1 100px;
-     display: flex; 
-     justify-content: flex-start; /* Garante que o menu comece à esquerda */ 
-    padding-left: 20px; /* Adiciona um espaço fixo antes do menu */
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 20px;
 }
 
 nav ul {
@@ -106,41 +103,21 @@ nav ul {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-  /*  flex-wrap: wrap; */
 }
 
 nav ul li {
-    width: 25%;
-    margin: 10px auto;
-    margin-right: 20px; /* Ajuste este valor para dar mais ou menos espaço entre os itens */
+    margin: 10px 20px;
 }
 
-nav ul li:last-child {
-    margin-right: 0; /* Remove o margin do último item para alinhamento correto */
-}
-
-/*nav ul li a {
-    display: block;
+nav ul li a {
+    display: inline-block;
     text-align: center;
     padding: 10px;
     color: var(--link-color);
     border: 1px solid var(--link-color);
     border-radius: var(--box-border-radius);
     transition: all var(--transition-time) ease-in-out;
-}*/
-
-nav ul li a {
-/*     display: block; */
-     display: inline-block; /* Alterado de block para inline-block */
-    text-align: center;
-    padding: 10px; /* Reduz o padding para diminuir o tamanho dos itens */
-    color: var(--link-color);
-    border: 1px solid var(--link-color);
-    border-radius: var(--box-border-radius);
-    transition: all var(--transition-time) ease-in-out;
-    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
-/*     width: auto; /* Deixa a largura automática para ajustar ao conteúdo */ */
-
+    font-size: 14px;
 }
 
 nav ul li a:hover {
@@ -188,7 +165,6 @@ footer {
     color: var(--footer-text-color);
 }
 
-/* Sobre */
 .sobre {
     width: 70%;
     padding: 15px;
@@ -201,8 +177,6 @@ footer {
 }
 
 .email {
-/*     font-size: var(--p-font-size); */
-/*     color: var(--primary-color); /* Cor específica para o e-mail */ 
     color: blue;
     text-decoration: underline;
 }
@@ -216,13 +190,11 @@ h1.nome::after {
     margin: 2px 0 15px 0;
 }
 
-
-/* Estilos da imagem com border-radius */
 .foto.com-borda {
     width: 250px;
     height: 250px;
     margin: 50px;
-    border-radius: 50%; /* Torna a imagem circular */
+    border-radius: 50%;
 }
 
 .foto.com-borda img {
@@ -231,12 +203,11 @@ h1.nome::after {
     border-radius: 50%;
 }
 
-/* Estilos da imagem sem border-radius */
 .foto.sem-borda {
     width: 300px;
     height: 300px;
     margin: 10px;
-    border-radius: 0; /* Remove o border-radius */
+    border-radius: 0;
 }
 
 .foto.sem-borda img {
@@ -250,7 +221,6 @@ p.paragrafo + p.paragrafo {
     font-size: var(--p-font-size);
 }
 
-/* Contato */
 .contato {
     width: 70%;
     padding: 15px;
@@ -288,24 +258,41 @@ p.paragrafo + p.paragrafo {
     color: var(--footer-text-color);
 }
 
-/* Media Screen */
 @media screen and (max-width: 600px) {
     body, html {
         font-size: var(--font-size-small);
     }
 
-.foto {
+    .foto {
         width: 400px;
         height: 400px;
         margin: 0 auto;
         border-radius: 50%;
     }
 
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .sobre, .contato {
+        width: 90%;
+    }
+
+    nav ul {
+        flex-direction: column;
+    }
+
     nav ul li {
         width: 100%;
+        margin: 10px 0;
+    }
+
+    .item {
+        flex: 0 1 100%;
+        height: auto;
     }
 }
-
 
 .super-card {
     width: 100%;
@@ -315,7 +302,7 @@ p.paragrafo + p.paragrafo {
     align-items: center;
 }
 
-.super-card-img, 
+.super-card-img,
 .super-card-img img {
     width: 180px;
     border-radius: 10%;
@@ -325,15 +312,21 @@ p.paragrafo + p.paragrafo {
     align-items: center;
 }
 
-.super-card-img h2 {margin-top: 20px;}
+.super-card-img h2 {
+    margin-top: 20px;
+}
 
-.super-card-text {margin-left: 40px;}
+.super-card-text {
+    margin-left: 40px;
+}
 
-.super-card-text p + p {margin-top: 2.2em;}
+.super-card-text p + p {
+    margin-top: 2.2em;
+}
 
-/* .super-card-text p + p {font-size: var(--p-font-size-small:);} */
-
-.card-group { margin-bottom: 00px; }
+.card-group {
+    margin-bottom: 0;
+}
 
 .card {
     max-width: 350px;
@@ -348,12 +341,15 @@ p.paragrafo + p.paragrafo {
     justify-content: space-between;
 }
 
-.card:hover { box-shadow: 30px 30px 5px 0px rgba(0, 0, 0, .15); }
+.card:hover {
+    box-shadow: 30px 30px 5px 0px rgba(0, 0, 0, .15);
+}
 
-.card-img { padding: 1em; }
+.card-img {
+    padding: 1em;
+}
 
 .link-destacado {
     color: blue;
     font-weight: bold;
-/*     text-decoration: underline; /* para sublinhar o texto */ */
 }
