@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>Sobre</title>
+
+        <!--Google Fonts-->
+        <link 
+        href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" 
+        rel="stylesheet">
+
+        <!--Font Awesome-->
+        <link 
+            rel="stylesheet" 
+            href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+            integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" 
+            crossorigin="anonymous">
+
+        <!--Meu Estilo-->
+        <link rel="stylesheet" href="./css/style.css">
+
+        <!--Meu Estilo Slide-->
+        <link rel="stylesheet" href="./css/slideResponsivo.css">
+
+        <!-- Estilos para corrigir a lista -->
+        <style>
+            /* Estilo para a lista com bullets */
+            ul.lista {
+                list-style-type: disc; /* Define o marcador como círculo */
+                padding-left: 20px; /* Adiciona espaço à esquerda para os bullets */
+            }
+
+            /* Ajuste no tamanho da fonte para os itens da lista */
+            ul.lista li {
+                font-size: 1.2em; /* Aumenta o tamanho da fonte */
+                margin-bottom: 10px; /* Espaço entre os itens da lista */
+            }
+        </style>
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div class="logo"><img src="./img/logo.png" alt="logo" title="logo"></div>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="sobre.html">About me</a></li>
+                        <li><a href="publications.html">Publications</a></li>
+                        <li><a href="teaching.html">Teaching</a></li>
+                        <li><a href="resources.html">Resources "Random"</a></li>
+                        <li><a href="people.html">People</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <main>
+            <article class="sobre">
+            <section class="texto">
+                <h1 class="nome">Física Quântica 2025.1</h1>
+                <p class="paragrafo">
+                    As aulas do curso são ministradas principalmente na lousa, e os slides, que incluem figuras, simulações e links, servem como material complementar. Eles não substituem as notas de aula, apenas agregam ao conteúdo. Portanto, caso não tenha assistido à aula em sala, fique atento, pois o conteúdo completo não está disponível apenas nos slides.
+                </p>
+
+                <!-- Lista com os pontos de referência -->
+                <ul class="lista">
+                    <li>Aulas baseadas principalmente na referência: <br>
+                            TIPLER, P. A.; LLEWELLYN, R. A.; <strong>Física Moderna</strong>, Grupo Editorial Nacional (gen) – LTC (sexta edição).
+                    </li>
+                    
+                    <li>Slides do curso Prof. Germán Lugones também podem ser consultados: <a href="https://quantica2017.wordpress.com/" target="_blank" class="link-destacado"> Acessar </a></li>
+<!--                     <li> Aulas do Prof. André -->
+                    <li>Plano de Ensino completo:  <a href="https://github.com/marciosampaio/Teaching/blob/main/FisicaQuantica/Plano_de_Ensino.pdf" target="_blank" class="link-destacado"> Acessar </a></li>
+
+                </ul>
+            </section>
+
+
+                <!-- Sessões de Aula -->
+<section class="aula">
+    <h2> Aula 1</h2>
+    <p>Bem-vindos à primeira aula de Física Quântica! Apresentação da disciplina; Evidências experimentais da teoria quântica: radiação do Corpo Negro. 
+    </p>
+
+    <!-- Lista de links com bullets -->
+    <ul class="lista">
+        <li>Slides da aula: <a href="https://github.com/marciosampaio/Teaching/blob/main/FisicaQuantica/1_aula_slides.pdf" target="_blank" class="link-destacado"> Acessar </a></li>
+        <li>Lista de exercícios: <a href="https://github.com/marciosampaio/Teaching/blob/main/FisicaQuantica/1_lista.pdf" target="_blank"class="link-destacado"> Acessar </a></li>
+
+    <!-- Referências complementares -->
+    <h3>Referências Complementares:</h3>
+    <ul class="lista">    
+        <li> Espectro de Corpo Negro (Simulação PhET):  <a href="https://phet.colorado.edu/sims/html/blackbody-spectrum/latest/blackbody-spectrum_all.html?locale=pt_BR" target="_blank" class="link-destacado"> Acessar</a></li>
+
+        <li> Aula do Prof. André Lessa: <a href="https://www.youtube.com/watch?v=I9dnJT5dEYY&list=PLpDFI2iyrPsx0T4ttkHZ-Z1vSONcT-AbL&index=2" target="_blank" class="link-destacado"> Acessar </a></li>
+        
+        <li> Nobel de Física - (1918) Radiação de corpo negro (UaiFísica): <a href="https://www.youtube.com/watch?v=1ZVeni7AZX4&t=11s" target="_blank" class="link-destacado"> Acessar </a></li>   
+    </ul>
+</section>
+
+
+<section class="aula">
+    <h2>Aula 2</h2>
+    <p>Evidências experimentais da teoria quântica: Radiação do Corpo Negro (continuação), efeito fotoelétrico e efeito Compton.</p>
+</section>
+       
+       </article>
+        </main>
+
+        <footer>
+            <small>Todos os direitos reservados 2024</small>
+        </footer>
+    </body>
+
+    <script 
+        src="https://code.jquery.com/jquery-3.4.1.min.js" 
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" 
+        crossorigin="anonymous">
+    </script>
+    <script src="./js/responsiveslides.min.js"></script>
+    <script src="./js/slide.js"></script>
+</html>
