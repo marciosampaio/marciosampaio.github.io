@@ -350,6 +350,86 @@ p.paragrafo + p.paragrafo {
 }
 
 .link-destacado {
-    color: blue;
-    font-weight: bold;
+    color: #007bff; /* Cor azul para o link */
+    font-weight: bold; /* Deixa o texto mais destacado */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: color 0.3s ease; /* Suaviza a transição ao passar o mouse */
 }
+
+.link-destacado:hover {
+    color: #0056b3; /* Cor mais escura ao passar o mouse */
+    text-decoration: underline; /* Adiciona o sublinhado no hover */
+}
+
+/* Estilo para a seção .aula */
+.aula {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 0;
+    background-color: #FFF;
+    border-radius: var(--box-border-radius);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+.aula h2 {
+    font-size: 1.8em;
+    color: var(--text-color); /* Usando a cor de texto definida */
+    margin-bottom: 15px; /* Espaço abaixo do título */
+}
+
+.aula p {
+    font-size: var(--p-font-size);
+    line-height: 1.6;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+/* Adicionando uma borda para destacar cada sessão */
+.aula + .aula {
+    border-top: 2px solid var(--box-shadow-color);
+}
+
+/* Ajustando o estilo para telas pequenas */
+@media screen and (max-width: 600px) {
+    .aula {
+        padding: 15px;
+    }
+
+    .aula h2 {
+        font-size: 1.5em; /* Ajustando o tamanho do título em telas menores */
+    }
+
+    .aula p {
+        font-size: 1.1em;
+    }
+}
+
+/* Estilo para a lista com bullets */
+ul.lista {
+    list-style-type: disc !important; /* Força a exibição dos bullets */
+    padding-left: 20px; /* Adiciona espaçamento à esquerda para os bullets */
+    margin: 15px 0 0 0; /* Adiciona um espaço entre o parágrafo e a lista */
+    color: var(--text-color); /* Cor do texto */
+}
+
+ul.lista li {
+    font-size: var(--p-font-size); /* Usando a variável de fonte */
+    margin-bottom: 10px; /* Espaçamento entre os itens */
+}
+
+/* Alterar a cor dos bullets para algo mais visível */
+ul.lista li {
+    position: relative; /* Alinha corretamente o marcador à esquerda */
+}
+
+ul.lista li::before {
+    content: "•"; /* Especifica o marcador de lista */
+    color: red; /* Cor do bullet (exemplo: azul) */
+    font-size: 1.5em; /* Tamanho maior do bullet */
+    position: absolute; /* Mantém o marcador à esquerda */
+    left: -20px; /* Ajusta a posição do bullet à esquerda */
+    top: 0; /* Alinha o marcador com o topo do texto */
+}
+
+
+
